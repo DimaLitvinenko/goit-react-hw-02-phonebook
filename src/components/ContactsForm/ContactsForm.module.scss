@@ -1,130 +1,130 @@
 .form {
-	box-sizing: border-box;
-	width: fit-content;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 40px 60px;
-	text-align: center;
+   box-sizing: border-box;
+   width: fit-content;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 40px 60px;
+   text-align: center;
 
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-	background-color: #15172b;
-	border-radius: 20px;
-	// ======================================
-	// position: absolute;
-	// top: 50%;
-	// left: 50%;
-	// transform: translate(-50%, -50%);
+   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+   background-color: #15172b;
+   border-radius: 20px;
+   // ======================================
+   // position: absolute;
+   // top: 50%;
+   // left: 50%;
+   // transform: translate(-50%, -50%);
 }
 
 .form__list {
-	position: relative;
-	margin-top: 0;
-	margin-bottom: 10px;
-	list-style: none;
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 10px;
+   list-style: none;
 }
 
 .form__item {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	&:not(:last-child) {
-		margin-bottom: 20px;
-	}
+   position: relative;
+   width: 100%;
+   height: 50px;
+   &:not(:last-child) {
+      margin-bottom: 20px;
+   }
 }
 
 .form__input {
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	padding: 4px 20px 0;
-	font-size: 18px;
-	color: #fff;
-	background-color: #303245;
-	border-radius: 12px;
-	border: 0;
-	outline: 0;
-	transition: box-shadow 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
-	&:hover {
-		box-shadow: 0 10px 8px #03e9f4;
-	}
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   padding: 4px 20px;
+   font-size: 18px;
+   color: #fff;
+   background-color: #303245;
+   border-radius: 12px;
+   border: 0;
+   outline: 0;
+   transition: box-shadow 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   &:hover {
+      box-shadow: 0 10px 8px #03e9f4;
+   }
 }
 
 .cut {
-	position: absolute;
-	left: 20px;
-	top: -20px;
-	width: 76px;
-	height: 20px;
-	opacity: 0;
-	background-color: #15172b;
-	border-radius: 10px;
-	transform: translateY(0);
-	transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-		opacity 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   position: absolute;
+   left: 20px;
+   top: -20px;
+   width: 76px;
+   height: 20px;
+   opacity: 0;
+   background-color: #15172b;
+   border-radius: 10px;
+   transform: translateY(0);
+   transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+      opacity 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .form__input:focus ~ .cut,
 .form__input:not(:placeholder-shown) ~ .cut {
-	transform: translateY(8px);
-	opacity: 1;
+   transform: translateY(6px);
+   opacity: 1;
 }
 
 .placeholder {
-	position: absolute;
-	top: 6px;
-	left: 26px;
-	padding: 10px 0;
-	line-height: 14px;
-	pointer-events: none;
-	color: #fff;
-	transform-origin: 0 50%;
-	transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-		color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   position: absolute;
+   top: 6px;
+   left: 26px;
+   padding: 10px 0;
+   line-height: 14px;
+   pointer-events: none;
+   color: #fff;
+   transform-origin: 0 50%;
+   transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+      color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .form__input:focus ~ .placeholder,
 .form__input:not(:placeholder-shown) ~ .placeholder {
-	transform: translateY(-30px) translateX(10px) scale(0.75);
+   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
 .form__input:not(:placeholder-shown) ~ .placeholder {
-	color: #808097;
+   color: #808097;
 }
 
 .form__input:focus ~ .placeholder {
-	color: #03e9f4;
+   color: #03e9f4;
 }
 
 .form__button {
-	position: relative;
-	display: inline-block;
+   position: relative;
+   display: inline-block;
 
-	margin-top: 40px;
-	padding: 8px 15px;
-	color: #03e9f4;
-	background-color: rgba(199, 192, 192, 0.72);
-	font-size: 16px;
-	font-family: sans-serif;
-	text-decoration: none;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	letter-spacing: 3px;
+   margin-top: 40px;
+   padding: 8px 15px;
+   color: #03e9f4;
+   background-color: rgba(199, 192, 192, 0.72);
+   font-size: 16px;
+   font-family: sans-serif;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   letter-spacing: 3px;
 
-	transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
-		background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
-		box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
-		border-radius 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+   transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+      background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+      box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+      border-radius 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-	&:hover {
-		background-color: #03e9f4;
-		color: #fff;
-		border: none;
-		border-radius: 8px;
-		box-shadow: 0 0 8px #03e9f4, 0 0 29px #03e9f4, 0 0 55px #03e9f4,
-			0 0 100px #03e9f4;
-	}
+   &:hover {
+      background-color: #03e9f4;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #03e9f4, 0 0 29px #03e9f4, 0 0 55px #03e9f4,
+         0 0 100px #03e9f4;
+   }
 }
 
 //=========== BTN effect =============
