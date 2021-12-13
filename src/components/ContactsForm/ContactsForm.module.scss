@@ -6,10 +6,11 @@
    padding: 40px 60px;
    text-align: center;
 
+   z-index: 10;
    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
    background-color: #15172b;
    border-radius: 20px;
-   // ======================================
+
    // position: absolute;
    // top: 50%;
    // left: 50%;
@@ -127,7 +128,7 @@
    }
 }
 
-//=========== BTN effect =============
+//=========== BTN animation =============
 
 /*
 <a href="#">
@@ -242,5 +243,4 @@
     bottom: 100%;
   }
 }
-
 */
